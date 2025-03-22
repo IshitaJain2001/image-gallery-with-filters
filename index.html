@@ -8,18 +8,30 @@
 </head>
 <body>
     <div class="gallery-container">
-        <div class="filters">
-            <div class="web-title">
-                <p>FreeImages</p>
+        <nav>
+            <div class="filters">
+                <div class="web-title">
+                    <p>FreeImages</p>
+                </div>
+                <div class="buttons">
+    
+              
+                <button onclick="filterImages('all')">All</button>
+                <button onclick="filterImages('nature')">Nature</button>
+                <button onclick="filterImages('coding')">Coding</button>
             </div>
-            <div class="buttons">
+            </div>
+        </nav>
 
-          
-            <button onclick="filterImages('all')">All</button>
-            <button onclick="filterImages('nature')">Nature</button>
-            <button onclick="filterImages('coding')">Coding</button>
-        </div>
-        </div>
+        <main>
+
+            <div class="cards">
+                <div class="card-1" onclick="filterImages('all')">All</div>
+                <div class="card-2" onclick="filterImages('nature')">Nature</div>
+                <div class="card-3" onclick="filterImages('coding')">Coding</div>
+            </div>
+        </main>
+    
     </div>
     <script src="index.js"></script>
 </body>

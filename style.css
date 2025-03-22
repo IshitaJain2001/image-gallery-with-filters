@@ -42,6 +42,20 @@
    padding: 10px;
  }
 
+ .cards{
+   display: flex;
+   justify-content: space-evenly;
+   height: 90vh;
+   align-items: center;
+ }
+
+ .card-1, .card-2,.card-3{
+   height: 38vh;
+   width: 25vw;
+   border: 1px solid black;
+   border-radius: 10%;
+ }
+
  @media (max-width:768px){
    .filters{
       height: 20vh;

@@ -14,12 +14,20 @@
     width: 100vw;
     height:10vh ;
     background-color: rgba(0, 0, 0, 0.264);
+    display: flex;
+    justify-content: space-between;
  }
-
+.web-title{
+   width: 10vw;
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   align-items: center;
+}
  button{
    background-color: rgba(22, 10, 10, 0.244);
    color:white;
-   padding: 10px 20px;
+   padding: 20px 20px;
   
    border-radius: 10px;
   
@@ -27,20 +35,27 @@
  }
 
  .buttons{
-   margin-left: 80%;
+   
    display: flex;
    justify-content: space-evenly;
-   padding: 20px;
+   width: 20vw;
+   padding: 10px;
  }
 
  @media (max-width:768px){
    .filters{
       height: 20vh;
       background-color: transparent;
+      flex-direction: column;
    }
    .buttons{
       margin-left: 0%;
       width: 100%;
       flex-direction: column;
+   }
+
+   .web-title{
+      width: 100vw;
+      margin-top: 10px;
    }
  }

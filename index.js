@@ -2,7 +2,7 @@
     console.log(filter);
  }
 
-let NatureArray=["assets/nature/natureimg1.jpg","assets/nature/natureimg2.jpg", "assets/nature/natureimg3.jpg","assets/nature/natureimg4.jpg" , "assets/nature/natureimg5.jpg"]
+let NatureArray=["assets/nature/natureimg1.jpg","assets/nature/natureimg2.jpg", "assets/nature/natureimg3.jpg","assets/nature/natureimg4.jpg" , "assets/nature/natureimg5.jpg", "assets/nature/natureimg6.jpg"]
 
 let card2= document.querySelector('.card-2')
 for(let i=0;i<=3;i++){

@@ -44,8 +44,19 @@ function filterImages(filter){
 filteredArray.forEach(ele => {
    let element= document.createElement('img')
    element.src= ele
- 
-   imagecontainer.append(element)
+ let btn= document.createElement('button')
+ btn.textContent= "free download"
+ btn.style.marginLeft= "32%"
+let finalelement= document.createElement('div')
+finalelement.append(element,btn)
+   imagecontainer.append(finalelement)
+   btn.addEventListener('click', function () {
+     
+      let link = document.createElement('a');
+      link.href = ele; 
+      link.download = ele.split('/').pop(); 
+      link.click(); 
+  });
 });
 
   }
